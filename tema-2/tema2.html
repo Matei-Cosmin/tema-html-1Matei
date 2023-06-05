@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pizza Order</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Pizza Order</legend>
+      
+      <label for="name" >Your name:</label>
+      <input type="text" id="name" name="name" pattern=".{3,10}" title="name3-10" required placeholder="Name">
+      <br><br>
+      <label for="email">Your email:</label>
+      <input type="email" id="email" name="email" required placeholder="Email"><br><br>
+      
+      <label for="quantity">Quantity:</label>
+      <select id="quantity" name="quantity">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+      </select>
+      <br><br>
+      
+      <label for="topping">Topping:</label>
+      <input type="radio" id="supreme" name="topping" value="supreme" checked>
+      <label for="supreme">Supreme</label>
+      <input type="radio" id="vegetarian" name="topping" value="vegetarian">
+      <label for="vegetarian">Vegetarian</label>
+      <input type="radio" id="hawaiian" name="topping" value="hawaiian">
+      <label for="hawaiian">Hawaiian</label>
+      </select>
+      <br><br>
+     
+      <label for="sauce">Sauce:</label>
+      <select id="sauce" name="sauce">
+        <option value="">Tomato</option>
+        <option value="">Cheese2</option>
+        <option value="">Tomato Garlic</option>
+      </select>
+      <br><br>
+      
+      <label for="extra">Extra:</label>
+      <input type="checkbox" value="cheese" name="cheese" checked>
+      <label for="cheese">Cheese</label>
+      
+      <input type="checkbox" value="olives" name="olives">
+      <label for="olives">Olives</label>
+      
+      <input type="checkbox" value="onion" name="onion">
+      <label for="onion">Onion</label>
+      <br><br>
+      
+      <label for="instructions">Delivery Instructions:</label><br>
+      <textarea id="instructions" name="instructions" required placeholder="Instructions"></textarea><br><br>
+      
+      <input type="submit" value="Send Order">
+      <input type="reset" value="Reset">
+    </fieldset>
+  </form>
+</body>
+</html>
